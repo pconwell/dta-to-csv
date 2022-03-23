@@ -10,7 +10,11 @@ args = vars(ap.parse_args())
 print(args['file'][:-4])
 
 # read data from given dta file
-data = pandas.io.stata.read_stata(args['file'])
+try:
+  data = pandas.io.stata.read_stata(args['file'])
+except ValueError:
+  data = pandas.io.stata.read_stata(args['file'], convert_categoricals=False)
+
 
 # save data in csv format
 data.to_csv(f"{args['file'][:-4]}.csv")
