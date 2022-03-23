@@ -9,4 +9,4 @@
 5. Run python script by typing `python dta_to_csv.py --file FILENAME` in to the powershell terminal (example: `python dta_to_csv.py --file airline.dta`
 6. Open csv file that was generated in your preferred software (Microsoft Excel, for example)
 
-> C:\Users\LKCon\AppData\Local\Programs\Python\Python39\python.exe .\dta_to_csv.py --file '.Uruguay 2006-7 Stata.dta'
+> C:\Users\LKCon\AppData\Local\Programs\Python\Python39\python.exe .\dta_to_csv.py --file '.\Uruguay 2006-7 Stata.dta'
